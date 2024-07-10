@@ -135,7 +135,7 @@ body {
 .container-conteudo {
     display: flex;
     justify-content: center;
-    margin-top: 8rem;
+    margin: 6rem 0 2rem 0;
     padding: 0 0.5rem;
 }
 
@@ -213,7 +213,7 @@ body {
 }
 
 .conteudo-inicio-apresentacao .conteudo-inicio-apresentacao-cvv {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 2rem;
     color: var(--cor-branco);
     border-radius: 0.7rem;
     border: 2px solid var(--cor-zul-escuro);
