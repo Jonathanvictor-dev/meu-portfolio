@@ -8,8 +8,8 @@
 
     --fonte-principal: "Poppins", sans-serif;
     --tamanho-fonte-h2: 1.6rem;
-    --tamanho0fonte-h3: 1.3rem;
-    --tamanho0fonte-h4: 1rem;
+    --tamanho-fonte-h3: 1.3rem;
+    --tamanho-fonte-h4: 1rem;
 }
 
 * {
@@ -264,7 +264,7 @@ body {
 
 .conteudo-sobre-educacao-titulo,
 .conteudo-sobre-experiencia-titulo {
-    font-size: var(--tamanho0fonte-h3);
+    font-size: var(--tamanho-fonte-h3);
     color: var(--cor-zul-escuro);
     margin-bottom: 1rem;
     font-weight: 600;
@@ -340,7 +340,7 @@ body {
 
 .card-educacao-titulo,
 .card-experiencia-titulo {
-    font-size: var(--tamanho0fonte-h4);
+    font-size: var(--tamanho-fonte-h4);
     font-weight: 600;
 }
 
@@ -349,6 +349,7 @@ body {
     font-size: 0.9rem;
     margin: 0.2rem 0;
     padding-left: 0.3rem;
+    opacity: 0.6;
 }
 
 .card-educacao-data,
