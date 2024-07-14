@@ -30,6 +30,5 @@ if (btnMenuDiminuir) {
         listaDeTextoMenu.forEach((link) => {
             link.style.display = 'none';
         });
-        
     });
 };
