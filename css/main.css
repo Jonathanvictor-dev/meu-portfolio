@@ -7,9 +7,6 @@
     --cor-branco: #FFFFFF;
 
     --fonte-principal: "Poppins", sans-serif;
-    --tamanho-fonte-h2: 1.6rem;
-    --tamanho-fonte-h3: 1.2rem;
-    --tamanho-fonte-h4: 1rem;
 }
 
 * {
@@ -54,7 +51,6 @@ body {
         -6px 0px 6px -4px #214664,
         0px 0px 6px 0px #214664;
     transition: .4s;
-    opacity: 0.3;
     z-index: 1000;
 }
 
@@ -141,6 +137,7 @@ body {
     justify-content: center;
     flex-direction: column;
     margin: 6rem 0 2rem 0;
+    padding: 0 0.5rem;
 }
 
 .conteudo-inicio {
@@ -219,15 +216,13 @@ body {
     text-transform: uppercase;
 }
 
-.conteudo-inicio-apresentacao .conteudo-inicio-apresentacao-texto { 
-    margin: 1.5rem 0;
-    padding: 0 0.9rem;
-    text-align: center;
+.conteudo-inicio-apresentacao .conteudo-inicio-apresentacao-texto {
+    text-align: justify;
+    padding: 1rem;
 }
 
 .conteudo-inicio-apresentacao .conteudo-inicio-apresentacao-cvv {
-    margin-top: 0.5rem;
-    padding: 1rem 4rem;
+    padding: 0.5rem 2rem;
     color: var(--cor-branco);
     border-radius: 0.7rem;
     border: 2px solid var(--cor-zul-escuro);
@@ -452,4 +447,123 @@ body {
     font-size: 0.7rem;
     padding-left: 0.3rem;
     opacity: 0.7;
+}
+
+/* Conteudo Sobre */
+
+.conteudo-sobre {
+    margin-top: 2rem;
+}
+
+.conteudo-sobre .conteudo-sobre-titulo {
+    font-size: var(--tamanho-fonte-h2);
+    font-weight: 600;
+}
+
+.conteudo-sobre-educacao-experiencia {
+    margin-top: 1rem;
+}
+
+.conteudo-sobre-educacao-titulo,
+.conteudo-sobre-experiencia-titulo {
+    font-size: var(--tamanho-fonte-h3);
+    color: var(--cor-zul-escuro);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.conteudo-sobre-educacao-titulo i,
+.conteudo-sobre-experiencia-titulo i {
+    width: 1.7rem;
+}
+
+.container-card-educacao,
+.container-card-experiencia {
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 1.5rem;
+    position: relative;
+}
+
+.container-card-educacao::-webkit-scrollbar {
+    background-color: transparent;
+    height: 2px;
+}
+
+.container-card-educacao::-webkit-scrollbar-thumb {
+    background-color: var(--cor-zul-escuro);
+}
+
+.container-card-experiencia::-webkit-scrollbar {
+    background-color: transparent;
+}
+
+.container-card-experiencia::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+.card-educacao {
+    padding-bottom: 1rem;
+    position: relative;
+}
+
+.card-experiencia {
+    padding-bottom: 1.5rem;
+    position: relative;
+}
+
+.container-card-experiencia .card-experiencia::after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--cor-zul-escuro);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.card-experiencia::before {
+    content: '';
+    position: absolute;
+    bottom: 6px;
+    left: 0;
+    height: 2px;
+    width: 270px; 
+    background-color: var(--cor-zul-escuro);
+    box-sizing: border-box;
+    z-index: -1;
+}
+
+.card-educacao-titulo,
+.card-experiencia-titulo {
+    font-size: var(--tamanho-fonte-h4);
+    font-weight: 600;
+}
+
+.card-educacao-descricao,
+.card-experiencia-descricao {
+    font-size: 0.9rem;
+    margin: 0.2rem 0;
+    padding-left: 0.3rem;
+    opacity: 0.6;
+}
+
+.card-educacao-data,
+.card-experiencia-data {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    padding-left: 0.3rem;
+    opacity: 0.6;
+}
+
+.conteudo-sobre-experiencia {
+    margin-top: 1rem;
 }
