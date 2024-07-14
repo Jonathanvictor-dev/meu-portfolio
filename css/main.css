@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-    --cor-preto-claro: #151515;
+    --cor-preto-claro: #1b1b1b;
     --cor-preto-escuro: #111111;
-    --cor-zul-escuro: #214664;
-    --cor-branco: #FFFFFF;
+    --cor-zul-claro: #01E2FC;
+    --cor-branco: #fffffff1;
 
     --fonte-principal: "Poppins", sans-serif;
     --tamanho-fonte-h2: 1.6rem;
@@ -41,26 +41,25 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-width: 70%;
+    min-width: 85%;
     background-color: var(--cor-preto-escuro);
     padding: 0.3rem;
     border-bottom-right-radius: 0.7rem;
     border-bottom-left-radius: 0.7rem;
     box-shadow: 
-        0px 6px 6px -4px #214664,
-        6px 0px 6px -4px #214664,
-        0px -6px 6px -4px #214664,
-        -6px 0px 6px -4px #214664,
-        0px 0px 6px 0px #214664;
+        0px 3px 3px -2px var(--cor-zul-claro),
+        3px 0px 3px -2px var(--cor-zul-claro),
+        0px -3px 3px -2px var(--cor-zul-claro),
+        -3px 0px 3px -2px var(--cor-zul-claro),
+        0px 0px 3px 0px var(--cor-zul-claro);
     transition: .4s;
-    opacity: 0.3;
     z-index: 1000;
 }
 
 .container-menu-header .menu-header-icon {
     font-size: 1.7rem;
     transition: .4s;
-    color: var(--cor-zul-escuro);
+    color: var(--cor-zul-claro);
     cursor: pointer;
     transform: rotate(90deg);
 }
@@ -68,7 +67,7 @@ body {
 .container-menu-header .menu-icon-diminuir {
     font-size: 1.7rem;
     transition: .4s;
-    color: var(--cor-zul-escuro);
+    color: var(--cor-zul-claro);
     cursor: pointer;
     transform: rotate(270deg);
     position: absolute;
@@ -91,9 +90,9 @@ body {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: var(--cor-zul-escuro);
+    color: var(--cor-zul-claro);
     padding: 0.5rem 0.7rem;
-    border-radius: 0.7rem;
+    border-radius: 0.9rem;
     font-size: 1.7rem;
     gap: 0.5rem;
     transition: .4s;
@@ -102,7 +101,7 @@ body {
 
 .menu-header-item .menu-header-item-link:hover {
     transform: translateY(-3px);
-    background-color: var(--cor-zul-escuro);
+    background-color: var(--cor-zul-claro);
     color: var(--cor-branco);
 }
 
@@ -113,7 +112,7 @@ body {
     bottom: -6px;
     width: 0;
     height: 2px;
-    background-color: var(--cor-zul-escuro);
+    background-color: var(--cor-zul-claro);
     transition: width .4s ease-in, right .4s ease-in;
 }
 
@@ -140,13 +139,13 @@ body {
     justify-content: center;
     flex-direction: column;
     margin: 6rem 0 2rem 0;
-    padding: 0 0.5rem;
 }
 
 .conteudo-inicio {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 0.9rem;
 }
 
 .container-conteudo-inicio-titulo {
@@ -158,7 +157,7 @@ body {
 .conteudo-inicio-subtitulo {
     font-size: 1.4rem;
     text-transform: uppercase;
-    color: var(--cor-zul-escuro);
+    color: var(--cor-zul-claro);
     font-weight: 600;
     text-align: left;
     padding-left: 0.5rem;
@@ -175,7 +174,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 6rem 0 2rem 0;
+    margin: 4rem 0 2rem 0;
     gap: 2rem;
 }
 
@@ -191,7 +190,7 @@ body {
 }
 
 .conteudo-inicio-redes_sociais .redes_sociais-link:hover {
-    color: var(--cor-zul-escuro);
+    color: var(--cor-zul-claro);
 }
 
 .redes_sociais-link i {
@@ -201,8 +200,13 @@ body {
 .conteudo-inicio-img img {
     width: 270px;
     height: 270px;
+    box-shadow: 
+        0px 3px 3px -2px var(--cor-zul-claro),
+        3px 0px 3px -2px var(--cor-zul-claro),
+        0px -3px 3px -2px var(--cor-zul-claro),
+        -3px 0px 3px -2px var(--cor-zul-claro),
+        0px 0px 3px 0px var(--cor-zul-claro);
     border-radius: 50%;
-    border: 1px solid var(--cor-zul-escuro);
 }
 
 .conteudo-inicio-apresentacao {
@@ -213,7 +217,7 @@ body {
 }
 
 .conteudo-inicio-apresentacao .conteudo-inicio-apresentacao-titulo {
-    color: var(--cor-zul-escuro);
+    color: var(--cor-zul-claro);
     font-size: var(--tamanho-fonte-h2);
     font-weight: 800;
     text-transform: uppercase;
@@ -221,26 +225,27 @@ body {
 
 .conteudo-inicio-apresentacao .conteudo-inicio-apresentacao-texto {
     text-align: center;
-    padding: 2rem 0.9rem;
+    padding: 2rem 0;
+    font-size: 0.9rem;
 }
 
 .conteudo-inicio-apresentacao .conteudo-inicio-apresentacao-cvv {
     padding: 0.7rem 4.5rem;
     color: var(--cor-branco);
-    border-radius: 0.7rem;
-    border: 2px solid var(--cor-zul-escuro);
+    border-radius: 0.9rem;
+    border: 2px solid var(--cor-zul-claro);
     text-decoration: none;
     box-shadow: 
-        0px 6px 6px -4px #214664,
-        6px 0px 6px -4px #214664,
-        0px -6px 6px -4px #214664,
-        -6px 0px 6px -4px #214664,
-        0px 0px 6px 0px #214664;
+        0px 3px 3px -2px var(--cor-zul-claro),
+        3px 0px 3px -2px var(--cor-zul-claro),
+        0px -3px 3px -2px var(--cor-zul-claro),
+        -3px 0px 3px -2px var(--cor-zul-claro),
+        0px 0px 3px 0px var(--cor-zul-claro);
     transition: .4s;
 }
 
 .conteudo-inicio-apresentacao-cvv:hover {
-    background: var(--cor-zul-escuro);
+    background: var(--cor-zul-claro);
     transform: scale(1.1);
 }
 
@@ -252,7 +257,7 @@ body {
     align-items: center;
     margin-top: 2rem;
     background-color: var(--cor-preto-claro);
-    padding: 1rem 0.9rem;
+    padding: 1rem 0rem;
 }
 
 .conteudo-sobre .conteudo-sobre-titulo {
@@ -267,13 +272,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 2rem 0 1rem 0;
+    margin: 2rem 0.9rem 1rem 0.9rem;
 }
 
 .conteudo-sobre-habilidades-titulo {
     margin: 1.5rem 0;
     font-size: var(--tamanho-fonte-h3);
-    color: var(--cor-zul-escuro);
+    color: var(--cor-zul-claro);
     font-weight: 800;
 }
 
@@ -288,11 +293,11 @@ body {
 }
 
 .habilidades-hard-titulo {
-    margin-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
     font-size: var(--tamanho-fonte-h3);
     font-weight: 800;
     text-align: center;
-    color: var(--cor-zul-escuro);
+    color: var(--cor-zul-claro);
 }
 
 .habilidades-hard-titulo i {
@@ -304,32 +309,45 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 0.6rem;
+    gap: 1.5rem;
 }
 
 .habilidades-hard-lista-item {
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 35%;
+    height: 6rem;
     gap: 0.5rem;
     list-style: none;
-    background-color: var(--cor-zul-escuro);
+    background-color: var(--cor-zul-claro);
+    color: var(--cor-preto-escuro);
     padding: 0.5rem 1rem;
-    border-radius: 0.7rem;
-    font-size: 0.7rem;
+    border-radius: 0.9rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 2px solid var(--cor-zul-claro);
+    box-shadow: 
+        0px 3px 3px -2px var(--cor-zul-claro),
+        3px 0px 3px -2px var(--cor-zul-claro),
+        0px -3px 3px -2px var(--cor-zul-claro),
+        -3px 0px 3px -2px var(--cor-zul-claro),
+        0px 0px 3px 0px var(--cor-zul-claro);
 }
 
 .habilidades-soft {
     margin-top: 2.5rem;
-    border-radius: 0.7rem;
+    border-radius: 0.9rem;
     padding: 0.5rem;
 }
 
 .habilidades-hard-lista-item i {
-    font-size: 1.3rem;
+    font-size: 3rem;
 }
 
 .habilidades-soft-titulo {
-    margin-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
     font-size: var(--tamanho-fonte-h3);
     font-weight: 800;
     text-align: center;
@@ -344,19 +362,37 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 0.6rem;
+    gap: 1.6rem;
     color: var(--cor-branco);
 }
 
 .habilidades-soft-lista-item {
     display: flex;
     align-items: center;
-    gap: 0.3rem;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    width: 35%;
+    height: 4rem;
+    gap: 0.5rem;
     list-style: none;
     padding: 0.5rem 1rem;
-    border-radius: 0.7rem;
-    border: 2px solid var(--cor-branco);
-    font-size: 0.7rem;
+    color: var(--cor-branco);
+    font-size: 1rem;
+    /* border-bottom: 3px solid var(--cor-zul-claro); */
+    position: relative;
+}
+
+.habilidades-soft-lista-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 3px;
+    width: 100%;
+    background-color: var(--cor-zul-claro);
+    animation: bordaAnimada 3s forwards;
 }
 
 .habilidades-soft-lista-item i {
@@ -370,7 +406,7 @@ body {
     align-items: baseline;
     justify-content: center;
     gap: 1.3rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 .conteudo-sobre-educacao, 
@@ -382,8 +418,8 @@ body {
 .conteudo-sobre-educacao-titulo,
 .conteudo-sobre-experiencia-titulo {
     font-size: var(--tamanho-fonte-h3);
-    color: var(--cor-zul-escuro);
-    margin-bottom: 1.5rem;
+    color: var(--cor-branco);
+    margin-bottom: 2.5rem;
     font-weight: 800;
     text-align: center;
 }
@@ -408,11 +444,17 @@ body {
     justify-content: center;
     margin-bottom: 2rem;
     padding: 0.3rem;
-    border: 2px solid var(--cor-zul-escuro);
+    border: 3px solid var(--cor-zul-claro);
     border-radius: 0.9rem;
     width: 9.5rem;
     height: 3.7rem;
     position: relative;
+    box-shadow: 
+        0px 3px 3px -2px var(--cor-zul-claro),
+        3px 0px 3px -2px var(--cor-zul-claro),
+        0px -3px 3px -2px var(--cor-zul-claro),
+        -3px 0px 3px -2px var(--cor-zul-claro),
+        0px 0px 3px 0px var(--cor-zul-claro);
 }
 
 .card-educacao:last-child,
@@ -425,17 +467,20 @@ body {
 .card-experiencia:not(:last-child)::after {
     content: '';
     position: absolute;
-    bottom: -36px;
+    top: 70px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: var(--cor-zul-escuro);
-    width: 2px;
+    background-color: var(--cor-zul-claro);
+    width: 3px;
     height: 36px;
+    animation: setaAnimada 3s forwards;
+    transform-origin: top;
 }
 
 .card-educacao-titulo,
 .card-experiencia-titulo {
     font-size: var(--tamanho-fonte-h4);
+    color: var(--cor-zul-claro);
 }
 
 .card-educacao-descricao,
@@ -443,7 +488,6 @@ body {
     font-size: 0.8rem;
     margin: 0.2rem 0;
     padding-left: 0.3rem;
-    opacity: 0.7;
     text-align: center;
 }
 
@@ -454,5 +498,22 @@ body {
     gap: 0.5rem;
     font-size: 0.7rem;
     padding-left: 0.3rem;
-    opacity: 0.7;
+}
+
+@keyframes bordaAnimada {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes setaAnimada {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 36px;
+    }
 }
