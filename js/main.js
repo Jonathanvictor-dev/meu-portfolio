@@ -30,3 +30,51 @@ if (btnMenuDiminuir) {
         });
     });
 };
+
+document.addEventListener('DOMContentLoaded', () => {
+    const listaDeLinks = document.querySelectorAll('.educacao-menu-item');
+    const listaDeSecoes = document.querySelectorAll('.educacao-info-card');
+
+    listaDeLinks.forEach(link => {
+        link.addEventListener('click', evento => {
+            evento.preventDefault();
+
+            listaDeLinks.forEach(links => {
+                links.classList.remove('ativo')
+            });
+
+            link.classList.add('ativo');
+
+            listaDeSecoes.forEach(secao => {
+                secao.classList.add('hidden');
+            });
+
+            const secaoID = link.getAttribute('data-section');
+            document.getElementById(secaoID).classList.remove('hidden');
+        });
+
+    });
+
+    const listaDeLinksXP = document.querySelectorAll('.experiencia-menu-item');
+    const listaDeSecoesXP = document.querySelectorAll('.experiencia-info-card');
+
+    listaDeLinksXP.forEach(link => {
+        link.addEventListener('click', evento => {
+            evento.preventDefault();
+
+            listaDeLinksXP.forEach(link => {
+                link.classList.remove('ativo');
+            });
+
+            link.classList.add('ativo');
+
+            listaDeSecoesXP.forEach(secoes => {
+                secoes.classList.add('hidden');
+            });
+
+            const secaoID = link.getAttribute('data-section');
+            document.getElementById(secaoID).classList.remove('hidden');
+        });
+    });
+});
+

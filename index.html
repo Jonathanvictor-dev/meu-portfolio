@@ -110,6 +110,10 @@
                                 JavaScript
                             </li>
                             <li class="habilidades-hard-lista-item">
+                                <i class="fa-brands fa-figma"></i>
+                                Figma
+                            </li>
+                            <li class="habilidades-hard-lista-item">
                                 <i class="fa-brands fa-github"></i>
                                 Github
                             </li>
@@ -157,21 +161,28 @@
                     <h3 class="conteudo-sobre-educacao-titulo">
                         <i class="fa-solid fa-graduation-cap"></i> Formação
                     </h3>
-                    <section class="container-card-educacao">
-                        <section class="card-educacao">
-                            <h4 class="card-educacao-titulo">Estácio</h4>
-                            <p class="card-educacao-descricao">Tecnólogo - ADS</p>
-                            <p class="card-educacao-data"><i class="fa-solid fa-calendar-days"></i>2024 - 2026</p>
-                        </section>
-                        <section class="card-educacao">
-                            <h4 class="card-educacao-titulo">FAN - AL</h4>
-                            <p class="card-educacao-descricao">Técnico - Programação</p>
-                            <p class="card-educacao-data"><i class="fa-solid fa-calendar-days"></i>2024 - 2025</p>
-                        </section>
-                        <section class="card-educacao">
-                            <h4 class="card-educacao-titulo">Alura</h4>
-                            <p class="card-educacao-descricao">Formação Front-end</p>
-                            <p class="card-educacao-data"><i class="fa-solid fa-calendar-days"></i>2024 - 2024</p>
+                    <section class="container-educacao">
+                        <nav class="educacao-menu">
+                            <a href="" data-section="estacio" class="educacao-menu-item ativo">Estácio</a>
+                            <a href="" data-section="fan" class="educacao-menu-item">FAN - AL</a>
+                            <a href="" data-section="alura" class="educacao-menu-item">Alura</a>
+                        </nav>
+                        <section class="educacao-info">
+                            <section class="educacao-info-card" id="estacio">
+                                <h4 class="educacao-info-card-titulo">Estácio</h4>
+                                <p class="educacao-info-card-descricao">Curso Tecnólogo - Análise e Desenvolvimento de sistemas</p>
+                                <p class="educacao-info-card-data"><i class="fa-solid fa-calendar-days"></i>2024 - 2026</p>
+                            </section>
+                            <section class="educacao-info-card hidden" id="fan">
+                                <h4 class="educacao-info-card-titulo">FAN - AL</h4>
+                                <p class="educacao-info-card-descricao">Curso Técnico - Programação</p>
+                                <p class="educacao-info-card-data"><i class="fa-solid fa-calendar-days"></i>2024 - 2025</p>
+                            </section>
+                            <section class="educacao-info-card hidden" id="alura">
+                                <h4 class="educacao-info-card-titulo">Alura</h4>
+                                <p class="educacao-info-card-descricao">Curso - Formação Front-end</p>
+                                <p class="educacao-info-card-data"><i class="fa-solid fa-calendar-days"></i>2024 - 2024</p>
+                            </section>
                         </section>
                     </section>
                 </section>
@@ -179,31 +190,34 @@
                     <h3 class="conteudo-sobre-experiencia-titulo">
                         <i class="fa-solid fa-briefcase"></i> Experiências
                     </h3>
-                    <section class="container-card-experiencia">
-                        <section class="card-experiencia">
-                            <h4 class="card-experiencia-titulo">Freelancer</h4>
-                            <p class="card-experiencia-descricao">Front-End</p>
-                            <p class="card-experiencia-data"><i class="fa-solid fa-calendar-days"></i>2024 - 2024</p>
-                        </section>
-                        <section class="card-experiencia">
-                            <h4 class="card-experiencia-titulo">Almaviva do Brasil</h4>
-                            <p class="card-experiencia-descricao">CX e Supervisor</p>
-                            <p class="card-experiencia-data"><i class="fa-solid fa-calendar-days"></i>2021 - 2024</p>
-                        </section>
-                        <section class="card-experiencia">
-                            <h4 class="card-experiencia-titulo">Lojas Riachuelo</h4>
-                            <p class="card-experiencia-descricao">Operador de Caixa</p>
-                            <p class="card-experiencia-data"><i class="fa-solid fa-calendar-days"></i>2019 - 2019</p>
-                        </section>
-                        <section class="card-experiencia">
-                            <h4 class="card-experiencia-titulo">Almaviva do Brasil</h4>
-                            <p class="card-experiencia-descricao">Atendente receptivo</p>
-                            <p class="card-experiencia-data"><i class="fa-solid fa-calendar-days"></i>2017 - 2018</p>
-                        </section>
-                        <section class="card-experiencia">
-                            <h4 class="card-experiencia-titulo">Solida Engenharia</h4>
-                            <p class="card-experiencia-descricao">Aprendiz - Almoxarifado</p>
-                            <p class="card-experiencia-data"><i class="fa-solid fa-calendar-days"></i>2015 - 2016</p>
+                    <section class="container-experiencia">
+                        <nav class="experiencia-menu">
+                            <a href="" data-section="almaviva01" class="experiencia-menu-item ativo">Almaviva</a>
+                            <a href="" data-section="riachuelo" class="experiencia-menu-item">Riachuelo</a>
+                            <a href="" data-section="almaviva02" class="experiencia-menu-item">Almaviva</a>
+                            <a href="" data-section="solida" class="experiencia-menu-item">Sólida</a>
+                        </nav>
+                        <section class="experiencia-info">
+                            <section class="experiencia-info-card" id="almaviva01">
+                                <h4 class="experiencia-info-card-titulo">Almaviva do Brasil</h4>
+                                <p class="experiencia-info-card-descricao">Supervisor de operações e representante de atendimento</p>
+                                <p class="experiencia-info-card-data"><i class="fa-solid fa-calendar-days"></i>2021 - 2024</p>
+                            </section>
+                            <section class="experiencia-info-card hidden" id="riachuelo">
+                                <h4 class="experiencia-info-card-titulo">Lojas Riachuelo</h4>
+                                <p class="experiencia-info-card-descricao">Operador de caixa</p>
+                                <p class="experiencia-info-card-data"><i class="fa-solid fa-calendar-days"></i>2019 - 2019</p>
+                            </section>
+                            <section class="experiencia-info-card hidden" id="almaviva02">
+                                <h4 class="experiencia-info-card-titulo">Almaviva</h4>
+                                <p class="experiencia-info-card-descricao">Representante de atendimento</p>
+                                <p class="experiencia-info-card-data"><i class="fa-solid fa-calendar-days"></i>2017 - 2018</p>
+                            </section>
+                            <section class="experiencia-info-card hidden" id="solida">
+                                <h4 class="experiencia-info-card-titulo">Sólida Engenharia</h4>
+                                <p class="experiencia-info-card-descricao">Jovem aprendiz - Almoxarifado</p>
+                                <p class="experiencia-info-card-data"><i class="fa-solid fa-calendar-days"></i>2015 - 2016</p>
+                            </section>
                         </section>
                     </section>
                 </section>
@@ -219,7 +233,7 @@
             <section class="container-card-projetos">
                 <section class="card-projeto">
                     <section class="card-projeto-img">
-                        <img src="assets/no-image.png" alt="">
+                        <img src="assets/portfolio-fantech.png" alt="">
                     </section>
                     <section class="card-projeto-info">
                         <h3 class="card-projeto-info-titulo">Projeto</h3>
