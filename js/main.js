@@ -78,3 +78,20 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+const secaoContato = document.querySelector('.container-contato');
+const btnAbrirContato = document.querySelector('#menu-header-abrir-contato');
+const btnFecharContato = document.querySelector('.contato-icone-fechar');
+
+if(btnAbrirContato) {
+    btnAbrirContato.addEventListener('click', evento => {
+        evento.preventDefault()
+        secaoContato.style.display = 'flex';
+    });
+};
+
+if(btnFecharContato) {
+    btnFecharContato.addEventListener('click', () => {
+        secaoContato.style.display = 'none';
+    });
+};
+
