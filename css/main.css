@@ -478,7 +478,7 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     margin-bottom: 2.5rem;
     border-radius: 0.9rem;
-    height: 10rem;
+    height: 12rem;
     box-shadow: 
         0px 3px 3px -2px var(--cor-zul-claro),
         3px 0px 3px -2px var(--cor-zul-claro),
@@ -1041,6 +1041,15 @@ body::-webkit-scrollbar-thumb {
         width: 72%;
     }
 
+    .conteudo-inicio-apresentacao-texto {
+        padding: 6rem !important;
+    }
+
+    .conteudo-sobre-habilidades-texto,
+    .conteudo-projetos-texto {
+        padding: 0 6rem !important;
+    }
+
     .conteudo-inicio,
     .conteudo-sobre,
     .conteudo-projetos {
@@ -1075,7 +1084,12 @@ body::-webkit-scrollbar-thumb {
     }
 
     .conteudo-sobre-experiencia {
-        min-width: 52%;
+        min-width: 50%;
+    }
+
+    .educacao-info-card,
+    .experiencia-info-card {
+        padding: 1.5rem;
     }
 
     .card-projeto {
