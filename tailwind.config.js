@@ -1,6 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./*.html", "./js/**/*.js"],
+  safelist: [
+    'text-red-500',
+    'text-green-500',
+    'bg-red-500',
+    'bg-green-500'
+  ],
   theme: {
     extend: {
       fontFamily: {
@@ -23,7 +29,7 @@ module.exports = {
       },
       animation: {
         'float': 'float 6s ease-in-out infinite',
-        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0.6, 0.6, 1) infinite',
       },
       keyframes: {
         float: {
