@@ -41,6 +41,12 @@ const formToast = document.getElementById('form-toast');
 contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
 
+    const name = contactForm.name.value;
+    const email = contactForm.email.value;
+    const message = contactForm.message.value;
+
+    console.log('Formulário enviado:', { name, email, message });
+
     formToast.classList.remove('hidden');
 
     contactForm.reset();
