@@ -51,7 +51,7 @@ function showMessage() {
 function createError(message) {
     return {
         message,
-        icon: 'fa-solid fa-triangle-exclamation',
+        icon: 'fa-solid fa-triangle-exclamation text-red-500',
     };
 }
 
